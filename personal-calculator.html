@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="personal-calculator.css">
+    <script src="personal-calculator.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Carbon Awareness</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="day-scenerio.html">Choose Your Day</a></li>
+            <li><a href="carbon-quiz.html">Carbon Quiz</a></li>
+            <li><a href="daily-challenge.html">Daily Green Task</a></li>
+        </ul>
+    </nav>
+
+    <!-- Personal Calculator Section -->
+    <section class="calculator">
+        <h1>Calculate Your Carbon Footprint</h1>
+        <p>Fill in the details below to estimate your annual carbon footprint.</p>
+
+        <form id="personalForm" class="form">
+            <label for="monthly_kWh">Electricity Use (kWh per month):</label>
+            <input type="number" id="monthly_kWh" name="monthly_kWh" placeholder="e.g., 400">
+
+            <label for="weekly_commute_distance">Weekly Commute Distance (km):</label>
+            <input type="number" id="weekly_commute_distance" name="weekly_commute_distance" placeholder="e.g., 50">
+
+            <label for="vehicle_type">Vehicle Type:</label>
+            <select id="vehicle_type" name="vehicle_type">
+                <option value="car">Car</option>
+                <option value="bus">Bus</option>
+                <option value="bike">Bike</option>
+                <option value="walking">Walking</option>
+            </select>
+
+            <label for="diet_type">Diet Type:</label>
+            <select id="diet_type" name="diet_type">
+                <option value="omnivore">Omnivore</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
+
+            <label for="monthlyWaste">Monthly Waste (kg):</label>
+            <input type="number" id="monthlyWaste" name="monthlyWaste" placeholder="e.g., 30">
+
+            <button type="button" onclick="calculatePersonalFootprint()">Calculate</button>
+        </form>
+
+        <div id="personalResult" class="result"></div>
+    </section>
+</body>
+</html>

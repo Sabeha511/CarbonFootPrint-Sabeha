@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Scenario - Carbon Footprint</title>
+    <link rel="stylesheet" href="day-scenerio.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Carbon Awareness</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-calculator.html">Personal Calculator</a></li>
+            <li><a href="carbon-quiz.html">Carbon Quiz</a></li>
+            <li><a href="daily-challenge.html">Daily Green Task</a></li>
+        </ul>
+    </nav>
+    <div id="dayScenarioContainer">
+        <h1>Day Scenario</h1>
+        <p>Make choices throughout your day to see your carbon footprint!</p>
+
+        <!-- Morning Choices -->
+        <div id="morningChoices" class="scenario">
+            <h2>Morning</h2>
+            <p>How will you commute to work?</p>
+            <button class="choiceButton" data-impact="2">Drive Alone</button>
+            <button class="choiceButton" data-impact="1">Carpool</button>
+            <button class="choiceButton" data-impact="0">Bike/Walk</button>
+            <button class="choiceButton" data-impact="1">Public Transport</button>
+        </div>
+
+        <!-- Afternoon Choices -->
+        <div id="afternoonChoices" class="scenario" style="display: none;">
+            <h2>Afternoon</h2>
+            <p>What will you have for lunch?</p>
+            <button class="choiceButton" data-impact="3">Beef Burger</button>
+            <button class="choiceButton" data-impact="2">Chicken Salad</button>
+            <button class="choiceButton" data-impact="1">Vegetarian Meal</button>
+            <button class="choiceButton" data-impact="0">Vegan Meal</button>
+        </div>
+
+        <!-- Evening Choices -->
+        <div id="eveningChoices" class="scenario" style="display: none;">
+            <h2>Evening</h2>
+            <p>How will you spend your evening?</p>
+            <button class="choiceButton" data-impact="3">Watch TV for hours</button>
+            <button class="choiceButton" data-impact="2">Go out in a car</button>
+            <button class="choiceButton" data-impact="1">Read a book</button>
+            <button class="choiceButton" data-impact="0">Go for a walk</button>
+        </div>
+
+        <!-- Results -->
+        <div id="scenarioResult" style="display: none;">
+            <h2>Your Day's Carbon Footprint</h2>
+            <p id="resultMessage"></p>
+            <button id="restartScenario">Start Over</button>
+        </div>
+    </div>
+
+    <script src="day-scenerio.js"></script>
+</body>
+</html>

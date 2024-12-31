@@ -1,0 +1,136 @@
+﻿/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f9f5;
+    color: #333;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+    background:#333;
+    padding: 10px ;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    .top-bar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+    }
+
+        .top-bar ul li {
+            margin: 0 15px;
+        }
+
+            .top-bar ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+                transition: color 0.3s ease;
+            }
+
+                .top-bar ul li a:hover {
+                    color: #81ecec;
+                }
+
+/* Header */
+header {
+    text-align: center;
+    padding: 70px 20px 20px; /* Adjust padding for the fixed top bar */
+    background: #3d8361;
+    color: white;
+}
+
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #3d8361;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Carbon Quiz Section */
+#carbonQuiz {
+    max-width: 800px;
+    margin: 70px auto 50px; /* Adjust margin for the fixed top bar */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    #carbonQuiz h2 {
+        font-size: 2.2em;
+        color: #3d8361;
+        margin-bottom: 20px;
+    }
+
+/* Quiz Buttons */
+.quizCategory {
+    background: linear-gradient(135deg, #5bae94, #3d8361);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+    .quizCategory:hover {
+        background: linear-gradient(135deg, #3d8361, #5bae94);
+        transform: translateY(-3px);
+    }
+
+.question {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#submitQuiz {
+    background: #5bae94;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+#quizResult {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3d8361;
+    margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge - Carbon Awareness</title>
+    <link rel="stylesheet" href="daily-challenge.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Carbon Awareness</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="personal-calculator.html">Personal Calculator</a></li>
+            <li><a href="carbon-quiz.html">Carbon Quiz</a></li>
+            <li><a href="day-scenerio.html">Choose Your Day</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Daily Challenge Section -->
+    <section id="daily-challenge">
+        <h2>Daily Green Tasks</h2>
+        <div class="task-container">
+            <!-- Task 1 -->
+            <div class="task-box">
+                <h3>Plant a Tree</h3>
+                <p>Take some time to plant a tree or care for a nearby plant. Trees help offset carbon emissions.</p>
+                <button onclick="completeTask('Plant a Tree')">Complete Task</button>
+            </div>
+            <!-- Task 2 -->
+            <div class="task-box">
+                <h3>Reduce Energy Usage</h3>
+                <p>Turn off unused lights and appliances today to conserve energy and reduce your carbon footprint.</p>
+                <button onclick="completeTask('Reduce Energy Usage')">Complete Task</button>
+            </div>
+            <!-- Task 3 -->
+            <div class="task-box">
+                <h3>Use Public Transport</h3>
+                <p>Switch to public transportation or carpool to save fuel and reduce greenhouse gas emissions.</p>
+                <button onclick="completeTask('Use Public Transport')">Complete Task</button>
+            </div>
+        </div>
+        <p id="taskPoints">Points: 0</p>
+    </section>
+
+    <script src="daily-challenge.js"></script>
+</body>
+</html>

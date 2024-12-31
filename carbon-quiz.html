@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Quiz</title>
+    <link rel="stylesheet" href="carbon-quiz.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-calculator.html">Personal Calculator</a></li>
+            <li><a href="daily-challenge.html">Daily Green Task</a></li>
+            <li><a href="day-scenerio.html">Choose Your Day</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to the Carbon Quiz</h1>
+    </header>
+
+    <main>
+        <!-- Carbon Quiz Section -->
+        <section id="carbonQuiz">
+            <h2>Carbon Quiz</h2>
+            <p>Test your knowledge about reducing your carbon footprint! Choose a category to get started:</p>
+
+            <!-- Quiz Categories -->
+            <div id="quizCategories">
+                <button class="quizCategory" data-category="transportation">Transportation</button>
+                <button class="quizCategory" data-category="energy">Energy</button>
+                <button class="quizCategory" data-category="food">Food</button>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quizContainer" style="display: none;">
+                <h3 id="quizTitle"></h3>
+                <div id="questions"></div>
+                <button id="submitQuiz" style="display: none;">Submit Quiz</button>
+                <div id="quizResult" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script src="carbon-quiz.js"></script>
+</body>
+</html>
